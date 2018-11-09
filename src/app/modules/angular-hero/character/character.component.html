@@ -1,0 +1,11 @@
+<ul class="collection"> 
+  <li   class="collection-item avatar">   
+    <img *ngIf="name == 'Mario'" src="assets/mario.png" alt="" class="circle">
+    <img *ngIf="name == 'Luigi'" src="assets/luigi.png" alt="" class="circle">
+    <span class="title">it is me! {{name}}, coins: {{coins | number :'1.2-2'}}</span>   
+  </li>
+</ul>
+<button class="btn waves-effect waves-light green accent-3" (click)="jump()">Jump</button>
+<button class="btn waves-effect waves-light green accent-3 " (click)="jumpForCoins()">Jump for coins</button>
+<input type="number" #goombaId/>
+<button class="btn waves-effect waves-light green accent-3" (click)="crushGoomba(goombaId.value)">Jump over</button>

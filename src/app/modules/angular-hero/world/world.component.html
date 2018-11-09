@@ -1,0 +1,8 @@
+<div class="card-panel blue lighten-2">
+  <div class="row">
+    <app-goomba [id]="item" (removeGoomba)="removeGoomba($event)" *ngFor="let item of enemies">
+    </app-goomba>
+  </div>
+  <app-character name="mario" (removeGoomba)="removeGoomba($event)" name="Mario" style="background-color:darkorange;display:block"></app-character>
+  <app-character name="luigi" (removeGoomba)="removeGoomba($event)" name="Luigi" style="background-color:darkblue;display:block"></app-character>
+</div>
